@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/fc020f06d1.js"
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+
+  <body>
+    <div class="notes-app-navbar">
+      <a href="#pending">Pending</a>
+      <a href="#complete">Complete</a>
+      <a href="#deleted">Deleted</a>
+      <div class="interact-buttons">
+        <a href="/add">
+          <button class="interactive-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="notes-app-container">
+      {{range .Tasks}}
+      <div class="notes-grid-colum">
+        <div class="notes-card">
+          <div class="notes-card-header">
+            <h3>{{.Title}}</h3>
+            <div class="notes-card-header-bttn">
+              <a href="/edit/?idvalue={{.Id}}">
+                <button>
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+              </a>
+              <a href="/delete/?idvalue={{.Id}}">
+                <button>
+                  <i class="fa-sharp fa-solid fa-trash"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <p>{{.Content}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<div>
+    <form action="/add" method="POST">
+        <h2>New Task</h2>
+        <hr>
+        <input type="text" id="headerID" name="headerName" value="">
+        <br>
+        <textarea id="content" id="contentID" name="contentName" value="">
+        </textarea>
+        <br>
+        <p>priority</p>
+
+        <input type="radio" id="high" name="priority" value="1">
+        <label for="high">High</label>
+
+        <input type="radio" id="medium" name="priority" value="2">
+        <label for="medium">Medium</label>
+
+        <input type="radio" id="low" name="priority" value="3">
+        <label for="low">Low</label>
+
+        <br>
+
+        <label for="finishDate">Finish Date:</label>
+        <br>
+        <input type="date" id="finishDate" name="finishDate" value="">
+        <br>
+        <input type="submit">
+    </form>
+</div>

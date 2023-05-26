@@ -1,0 +1,48 @@
+.notes-app-navbar {
+  overflow: hidden;
+  background-color: #202124;
+}
+
+.notes-app-navbar a {
+  float: left;
+  padding: 14px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.interact-buttons {
+  float: right;
+  overflow: hidden;
+}
+
+.interactive-btn {
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
+}
+
+.notes-app-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 100px;
+}
+
+.notes-grid-colum {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+
+.notes-card {
+  border: 3px;
+  border-style: solid;
+  margin: 3px;
+  padding: 5px;
+}
+
+.notes-card-header {
+  display: flex;
+  justify-content: space-between;
+}
